@@ -7,5 +7,6 @@ spec:
   selector:
     app: webapp1
   ports:
-    - port: 80
-      targetPort: 8080
+    -  name: http
+       port: 80
+       targetPort: 8080
