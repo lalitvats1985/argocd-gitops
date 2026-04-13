@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: webapp2
+    app: webapp3
   ports:
     - port: 80
       targetPort: 8080
