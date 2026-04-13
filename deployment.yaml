@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: webapp3
+  namespace: prod  
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapp3
+  template:
+    metadata:
+      labels:
+        app: webapp3
+    spec:
+      containers:
+      - name: webapp3
+        image: lalitvats1985/webapp:v3
+        ports:
+        - containerPort: 8080
+
+
+
